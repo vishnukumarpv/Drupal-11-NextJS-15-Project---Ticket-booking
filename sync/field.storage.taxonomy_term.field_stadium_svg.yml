@@ -1,0 +1,23 @@
+uuid: 5ed684c8-aed2-4063-b137-b58d19700a9b
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - file
+    - taxonomy
+id: taxonomy_term.field_stadium_svg
+field_name: field_stadium_svg
+entity_type: taxonomy_term
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

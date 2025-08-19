@@ -1,0 +1,8 @@
+name: 'Ticket booking app'
+type: module
+description: 'Handle ticket booking system with Restful'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:datetime
+  - drupal:user

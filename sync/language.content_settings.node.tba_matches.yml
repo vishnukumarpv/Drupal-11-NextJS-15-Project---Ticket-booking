@@ -1,0 +1,16 @@
+uuid: b0a9978c-adb3-449e-b494-e0b8b3bddc48
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.tba_matches
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.tba_matches
+target_entity_type_id: node
+target_bundle: tba_matches
+default_langcode: site_default
+language_alterable: false

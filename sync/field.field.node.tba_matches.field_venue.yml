@@ -1,0 +1,29 @@
+uuid: 8d1feac6-c08f-448a-9936-3e134557c815
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_venue
+    - node.type.tba_matches
+    - taxonomy.vocabulary.venue
+id: node.tba_matches.field_venue
+field_name: field_venue
+entity_type: node
+bundle: tba_matches
+label: Venue
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      venue: venue
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,73 @@
+# ========================================
+# Core & Vendor (Composer-managed)
+# ========================================
+/web/core/
+/vendor/
+
+# ========================================
+# Contrib modules, themes, profiles, libraries
+# (Composer-managed)
+# ========================================
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+/web/libraries/
+
+# ========================================
+# Files uploaded via the site
+# ========================================
+/web/sites/*/files/
+/web/sites/*/private/
+
+# ========================================
+# Config (optional)
+# Uncomment if you manage config elsewhere
+# ========================================
+#/config/
+
+# ========================================
+# Environment & services overrides
+# ========================================
+/web/sites/*/settings*.php
+/web/sites/*/services*.yml
+/web/sites/*/development.services.yml
+/web/sites/*/local.services.yml
+
+# ========================================
+# Caches, logs, temp
+# ========================================
+/web/sites/*/files/php/twig/
+/web/sites/*/files/css/
+/web/sites/*/files/js/
+/web/sites/*/files/styles/
+/web/sites/*/files/ctools/css/
+/web/sites/*/files/ctools/js/
+/web/sites/*/files/translations/
+/web/sites/*/files/temp/
+/web/sites/*/files/languages/
+/web/sites/*/files/h5p/
+/web/sites/*/files/sync/
+
+# ========================================
+# Drush
+# ========================================
+/drush/contrib/
+/drush/commands/contrib/
+/.drush/
+
+# ========================================
+# PHPUnit & testing
+# ========================================
+/.phpunit.result.cache
+/.phpunit.cache
+/phpunit.xml
+/phpunit.xml.dist
+/simpletest/
+/tests/reports/
+/coverage/
+
+# ========================================
+# Node / Frontend builds
+# ============
+
+/.DS_Store

@@ -1,0 +1,19 @@
+uuid: a8792a02-7cb2-4c9b-ae51-75b796d682ac
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.match
+id: node.match.field_date
+field_name: field_date
+entity_type: node
+bundle: match
+label: Date
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

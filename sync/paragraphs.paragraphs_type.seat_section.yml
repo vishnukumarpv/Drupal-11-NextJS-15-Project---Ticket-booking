@@ -1,0 +1,10 @@
+uuid: 2f7fb65b-3c2c-4f13-b555-bb5cc15df82d
+langcode: en-gb
+status: true
+dependencies: {  }
+id: seat_section
+label: 'Seat section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

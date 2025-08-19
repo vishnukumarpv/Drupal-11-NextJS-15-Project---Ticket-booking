@@ -1,0 +1,16 @@
+uuid: 1708d557-48d2-403b-8a49-7899643ca12f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.teams
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.teams
+target_entity_type_id: taxonomy_term
+target_bundle: teams
+default_langcode: site_default
+language_alterable: false

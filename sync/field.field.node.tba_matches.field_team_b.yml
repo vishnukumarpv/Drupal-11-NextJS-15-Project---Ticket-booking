@@ -1,0 +1,29 @@
+uuid: 497e8239-0818-44b8-85ac-77964b9819ce
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_team_b
+    - node.type.tba_matches
+    - taxonomy.vocabulary.teams
+id: node.tba_matches.field_team_b
+field_name: field_team_b
+entity_type: node
+bundle: tba_matches
+label: 'Team B'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      teams: teams
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,27 @@
+booking.rest_api:
+  path: '/api/bookings'
+  defaults:
+    _controller: '\Drupal\ticket_booking_app\Controller\BookingRestController::list'
+    _format: json
+  methods: [GET]
+  requirements:
+    _permission: 'view published booking entities'
+
+booking.rest_api_single:
+  path: '/api/bookings/{booking}'
+  defaults:
+    _controller: '\Drupal\ticket_booking_app\Controller\BookingRestController::get'
+    _format: json
+  methods: [GET]
+  requirements:
+    _permission: 'view published booking entities'
+    booking: \d+
+
+booking.rest_api_create:
+  path: '/api/bookings'
+  defaults:
+    _controller: '\Drupal\ticket_booking_app\Controller\BookingRestController::add'
+    _format: json
+  methods: [POST]
+  requirements:
+    _permission: 'add booking entities'

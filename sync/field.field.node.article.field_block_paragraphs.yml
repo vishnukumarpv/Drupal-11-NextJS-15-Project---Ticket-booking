@@ -1,0 +1,31 @@
+uuid: 484d91f0-138f-45f1-8cff-ac52bfe0d5cd
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_block_paragraphs
+    - node.type.article
+    - paragraphs.paragraphs_type.news_blocks
+  module:
+    - entity_reference_revisions
+id: node.article.field_block_paragraphs
+field_name: field_block_paragraphs
+entity_type: node
+bundle: article
+label: 'Block paragraphs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      news_blocks: news_blocks
+    negate: 0
+    target_bundles_drag_drop:
+      news_blocks:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

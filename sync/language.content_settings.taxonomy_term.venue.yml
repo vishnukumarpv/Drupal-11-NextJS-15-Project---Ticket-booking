@@ -1,0 +1,16 @@
+uuid: 96d108f8-3f1d-4b76-a971-352cfd616a32
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.venue
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.venue
+target_entity_type_id: taxonomy_term
+target_bundle: venue
+default_langcode: site_default
+language_alterable: false

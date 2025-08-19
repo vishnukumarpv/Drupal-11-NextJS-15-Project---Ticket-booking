@@ -1,0 +1,34 @@
+uuid: 44313f03-1636-415a-8f06-048563bf8424
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pricing
+    - node.type.tba_matches
+    - paragraphs.paragraphs_type.seat_section
+  module:
+    - entity_reference_revisions
+id: node.tba_matches.field_pricing
+field_name: field_pricing
+entity_type: node
+bundle: tba_matches
+label: Pricing
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      seat_section: seat_section
+    negate: 0
+    target_bundles_drag_drop:
+      news_blocks:
+        weight: 3
+        enabled: false
+      seat_section:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions

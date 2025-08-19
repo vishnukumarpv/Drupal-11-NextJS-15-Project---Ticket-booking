@@ -1,0 +1,10 @@
+uuid: 8628b629-2e02-4506-bb38-408aa7f71366
+langcode: en-gb
+status: true
+dependencies: {  }
+id: news_blocks
+label: 'News blocks'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

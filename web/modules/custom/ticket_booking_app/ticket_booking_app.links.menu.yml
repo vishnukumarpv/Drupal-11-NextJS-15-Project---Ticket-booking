@@ -1,0 +1,20 @@
+ticket_booking_app.admin:
+  title: 'Ticket Booking'
+  route_name: entity.booking.collection
+  description: 'Ticket booking administration'
+  parent: system.admin
+  weight: 100
+
+entity.booking.collection:
+  title: 'Bookings'
+  route_name: entity.booking.collection
+  description: 'List and manage booking entities'
+  parent: ticket_booking_app.admin
+  weight: 10
+
+entity.booking.add_form:
+  title: 'Add Booking'
+  route_name: entity.booking.add_form
+  description: 'Add a new booking'
+  parent: ticket_booking_app.admin
+  weight: 20

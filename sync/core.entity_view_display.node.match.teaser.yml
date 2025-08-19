@@ -1,0 +1,59 @@
+uuid: 7f15a167-1890-415d-81bf-d69960678450
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.match.body
+    - field.field.node.match.field_date
+    - field.field.node.match.field_event_category
+    - field.field.node.match.field_image
+    - field.field.node.match.field_images
+    - field.field.node.match.field_pricing
+    - field.field.node.match.field_team_a
+    - field.field.node.match.field_team_b
+    - field.field.node.match.field_venue
+    - image.style.medium
+    - node.type.match
+  module:
+    - image
+    - text
+    - user
+id: node.match.teaser
+targetEntityType: node
+bundle: match
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_date: true
+  field_event_category: true
+  field_images: true
+  field_pricing: true
+  field_team_a: true
+  field_team_b: true
+  field_venue: true
+  langcode: true

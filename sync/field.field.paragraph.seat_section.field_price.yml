@@ -1,0 +1,23 @@
+uuid: 53fa408c-6459-4c3b-890d-63536e0c1337
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_price
+    - paragraphs.paragraphs_type.seat_section
+id: paragraph.seat_section.field_price
+field_name: field_price
+entity_type: paragraph
+bundle: seat_section
+label: Price
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 2.0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

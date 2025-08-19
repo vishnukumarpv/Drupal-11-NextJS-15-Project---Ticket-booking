@@ -1,0 +1,26 @@
+uuid: 14849668-ffc0-4987-ab1c-c31fa4c39302
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - serialization
+    - ticket_booking_app
+    - user
+_core:
+  default_config_hash: xb3FbVOK9TtMSiiJCFjh3i0EbIeotZ0qBJFE0bSiugc
+id: entity.booking
+plugin_id: 'entity:booking'
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+    - PATCH
+    - DELETE
+  formats:
+    - json
+    - xml
+  authentication:
+    - basic_auth
+    - cookie

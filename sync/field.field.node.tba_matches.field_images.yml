@@ -1,0 +1,38 @@
+uuid: 47da1350-4199-4f0c-a86a-6c7c4687d597
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_images
+    - node.type.tba_matches
+  module:
+    - image
+id: node.tba_matches.field_images
+field_name: field_images
+entity_type: node
+bundle: tba_matches
+label: Images
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: images/match
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

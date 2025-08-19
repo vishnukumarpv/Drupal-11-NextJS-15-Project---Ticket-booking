@@ -1,0 +1,32 @@
+uuid: e5e3e11e-7316-4837-9faa-d77052e9ba69
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.venue.field_stadium_svg
+    - taxonomy.vocabulary.venue
+  module:
+    - file
+    - text
+id: taxonomy_term.venue.default
+targetEntityType: taxonomy_term
+bundle: venue
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_stadium_svg:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

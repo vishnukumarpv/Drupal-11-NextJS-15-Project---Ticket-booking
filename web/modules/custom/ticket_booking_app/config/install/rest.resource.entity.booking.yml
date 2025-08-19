@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ticket_booking_app
+    - user
+    - serialization
+id: entity.booking
+plugin_id: 'entity:booking'
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+    - PATCH
+    - DELETE
+  formats:
+    - json
+    - xml
+  authentication:
+    - basic_auth
+    - cookie

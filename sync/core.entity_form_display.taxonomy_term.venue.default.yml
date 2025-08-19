@@ -1,0 +1,65 @@
+uuid: 856ac80b-0ebc-45b0-a00c-f16c488aa8e1
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.venue.field_stadium_svg
+    - taxonomy.vocabulary.venue
+  module:
+    - file
+    - path
+    - text
+id: taxonomy_term.venue.default
+targetEntityType: taxonomy_term
+bundle: venue
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_stadium_svg:
+    type: file_generic
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  translation:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

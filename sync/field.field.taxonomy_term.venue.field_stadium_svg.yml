@@ -1,0 +1,27 @@
+uuid: 8eabda73-3e01-493b-8009-0aa9980ff31c
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_stadium_svg
+    - taxonomy.vocabulary.venue
+  module:
+    - file
+id: taxonomy_term.venue.field_stadium_svg
+field_name: field_stadium_svg
+entity_type: taxonomy_term
+bundle: venue
+label: 'Stadium SVG'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: layout-media
+  file_extensions: svg
+  max_filesize: ''
+  description_field: false
+field_type: file

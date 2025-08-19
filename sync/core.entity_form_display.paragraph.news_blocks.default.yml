@@ -1,0 +1,23 @@
+uuid: 35e7c149-3789-4f46-941a-91a5913d0767
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.news_blocks.field_title
+    - paragraphs.paragraphs_type.news_blocks
+id: paragraph.news_blocks.default
+targetEntityType: paragraph
+bundle: news_blocks
+mode: default
+content:
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

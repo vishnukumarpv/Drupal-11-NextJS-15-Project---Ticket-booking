@@ -1,0 +1,20 @@
+uuid: 26452a7e-3aa0-404e-89e5-fdf6af6bc8cc
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_available_seats
+field_name: field_available_seats
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

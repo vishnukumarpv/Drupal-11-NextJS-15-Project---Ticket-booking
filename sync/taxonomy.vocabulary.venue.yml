@@ -1,0 +1,9 @@
+uuid: 053b89f5-cf86-49ff-a3f7-2f78a522116e
+langcode: en-gb
+status: true
+dependencies: {  }
+name: Venue
+vid: venue
+description: null
+weight: 0
+new_revision: false

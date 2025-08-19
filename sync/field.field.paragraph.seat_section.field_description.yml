@@ -1,0 +1,24 @@
+uuid: 3f788d6e-c656-45c3-8606-797516aba5c0
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.seat_section
+  module:
+    - text
+id: paragraph.seat_section.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: seat_section
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long
