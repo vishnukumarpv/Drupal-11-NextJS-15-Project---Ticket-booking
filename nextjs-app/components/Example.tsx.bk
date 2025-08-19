@@ -1,0 +1,11 @@
+export default async function HomePage({ params: { lang } }: HomePageProps) {
+  const dictionary = await getDictionary(lang)
+  const t = createTranslator(dictionary)  // Create translator once
+  
+  return (
+    <div>
+      <h1>{t('home.title')}</h1>           {/* Clean usage */}
+      <p>{t('home.userCount', { count: 1000 })}</p>  {/* With params */}
+    </div>
+  )
+}

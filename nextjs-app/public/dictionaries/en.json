@@ -1,0 +1,32 @@
+{
+  "common": {
+    "hello": "Hello",
+    "welcome": "Welcome",
+    "home": "Home",
+    "about": "About Us",
+    "contact": "Contact",
+    "language": "Language",
+    "english": "English",
+    "arabic": "Arabic",
+    "login": "Login",
+    "logout": "Logout",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "search": "Search",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "noData": "No data available"
+  },
+  "home": {
+    "welcome": "Welcome to our website!",
+    "description": "We are glad to have you here. Explore our services and learn more about what we offer.",
+    "getStarted": "Get Started"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "services": "Services"
+  }
+}

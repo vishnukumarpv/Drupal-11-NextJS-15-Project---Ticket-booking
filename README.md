@@ -33,7 +33,7 @@ project-root/
 │   │   └── custom/      # Custom modules (Booking, API, etc.)
 │   └── themes/          # Custom & contrib themes
 │
-├── nextjs-fe/          # Next.js 15 frontend
+├── nextjs-app/          # Next.js 15 frontend
 │   ├── app/             # App Router structure
 │   ├── components/      # React components
 │   ├── store/           # Redux store
@@ -67,7 +67,7 @@ ddev drush site:install
 
 ### 3. Frontend (Next.js 15)
 ```bash
-cd nextjs-fe
+cd nextjs-app
 npm install
 npm run dev
 ```
